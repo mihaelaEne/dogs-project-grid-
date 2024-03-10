@@ -1,0 +1,214 @@
+body{
+
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+
+    
+}
+
+img{
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px; 
+
+}
+
+
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+
+.header-nav-item{
+ background-color: white;
+  padding: 10px 30px;
+
+}
+
+
+.description-container{
+ 
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    text-align: center;
+
+  
+    padding: 5px;
+
+
+}
+
+.description-item-image{
+
+    width: 80%;
+    max-width: 300px;
+
+}
+
+
+.main-container{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    }
+
+/* sectiunea  */
+.projects-container{
+     display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.projects-card{
+
+     display: flex;
+        
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     
+     width: 90%;
+
+}
+
+.projects-card img{
+
+    /* display: block; */
+     width: 90%;
+     max-width: 300px;
+}
+
+
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+
+.footer-item-name{
+    display: flex;
+    align-items:start;
+    justify-content: start;
+    flex-direction: start;
+    text-align: start;
+
+
+
+}
+
+.footer-item-link{
+   
+    justify-content: end;
+    align-items: end;
+    flex-direction: end;
+    text-align: end;
+   
+}
+
+/* tableta >640px */
+
+@media (min-width:640px) {
+    
+
+    .header-nav{
+
+         width: 80%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap:5px;
+
+    }
+
+    .header-nav-item{
+         width: 150px;
+    }
+    
+    .description-container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+
+    .description-container img{ 
+       margin-right: auto;
+    }
+
+    .projects-container{
+
+        grid-template-columns: 1fr 1fr;
+        
+        
+
+    }
+
+    .projects-card{
+
+         width: 90%;
+    }
+
+
+    .footer-nav{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    
+}
+
+
+/*  calculator >920*/
+@media (min-width:920px) {
+    
+  .header-container{
+
+      flex-direction: row;
+      padding: 5px;
+  }
+
+  .header-item-name{
+
+     margin-right: auto;
+  }
+    
+  .header-nav{
+
+     width: 30%;
+  }
+
+  .projects-container{
+    grid-template-columns: 1fr 1fr 1fr;
+   
+  }
+
+
+  .projects-card{
+    width: 90%;
+  }
+
+}
